@@ -1,0 +1,26 @@
+{
+  "name": "elm-geometric-transformation",
+  "version": "1.0.0",
+  "description": "Rotate, Scale, Translate and Shear shapes",
+  "keywords": [
+    "elm"
+  ],
+  "author": "bja <code@benansell.com>",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:benansell/elm-geometric-transformation.git"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "elm-test": "0.17.1",
+    "rimraf": "2.5.4"
+  },
+  "scripts": {
+    "clean": "rimraf node_modules elm-stuff tests/elm-stuff",
+    "build": "elm-make",
+    "build-doc": "elm-make --docs=documentation.json",
+    "test-console": "elm-test tests/TestRunnerConsole.elm || true",
+    "test-html": "cd tests && elm-reactor"
+  }
+}
