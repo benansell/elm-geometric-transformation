@@ -1,6 +1,6 @@
 {
   "name": "elm-geometric-transformation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Rotate, Scale, Translate and Shear shapes",
   "keywords": [
     "elm"
@@ -13,8 +13,8 @@
   "license": "BSD-3-Clause",
   "dependencies": {},
   "devDependencies": {
-    "elm-test": "0.17.1",
-    "rimraf": "2.5.4"
+    "elm-test": "^0.17.3",
+    "rimraf": "^2.5.4"
   },
   "scripts": {
     "clean": "rimraf node_modules elm-stuff tests/elm-stuff",

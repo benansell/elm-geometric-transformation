@@ -1,14 +1,14 @@
 {
-    "version": "1.0.0",
+    "version": "1.0.1",
     "summary": "Rotate, Scale, Translate and Shear shapes",
     "repository": "https://github.com/benansell/elm-geometric-transformation.git",
     "license": "BSD-3-Clause",
     "source-directories": [
         "src"
     ],
-  "exposed-modules": [
+    "exposed-modules": [
         "Transformer2D"
-  ],
+    ],
     "dependencies": {
         "elm-lang/core": "4.0.5 <= v < 5.0.0",
         "elm-lang/html": "1.1.0 <= v < 2.0.0"
