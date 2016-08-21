@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git@github.com:benansell/elm-geometric-transformation.git"
   },
-  "license": "MIT",
+  "license": "BSD-3-Clause",
   "dependencies": {},
   "devDependencies": {
     "elm-test": "0.17.1",
