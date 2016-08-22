@@ -21,6 +21,7 @@
     "build": "elm-make",
     "build-doc": "elm-make --docs=documentation.json",
     "test-console": "elm-test tests/TestRunnerConsole.elm || true",
-    "test-html": "cd tests && elm-reactor"
+    "test-html": "cd tests && elm-reactor",
+    "test" : "npm run test-console"
   }
 }
