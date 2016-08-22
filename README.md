@@ -1,4 +1,5 @@
-# elm-geometric-transformation
+# elm-geometric-transformation [![Build status](https://ci.appveyor.com/api/projects/status/1fspr6u4h801x569/branch/master?svg=true)](https://ci.appveyor.com/project/benansell/elm-geometric-transformation/branch/master) [![Build Status](https://travis-ci.org/benansell/elm-geometric-transformation.svg?branch=master)](https://travis-ci.org/benansell/elm-geometric-transformation)
+
 An elm package for performing geometric transformations on points
 
 The following 2D transformations are supported:
