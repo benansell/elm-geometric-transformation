@@ -2,7 +2,7 @@ language: node_js
 
 cache:
   directories:
-    - tests/elm-stuff
+    - tests/elm-stuff/build-artifacts
 
 os:
   - linux
