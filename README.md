@@ -15,8 +15,8 @@ API documentation can be found on [elm-packages](http://package.elm-lang.org/pac
 To rotate a any shape (list of points) by an angle around the origin:
 
 ```elm
-    rotateShape : List Point -> Float -> List Point
-    rotateShape points angle =
+    rotateShape : Float -> List Point -> List Point
+    rotateShape angle points =
         let
             transform =
                 rotate Clockwise angle
@@ -30,3 +30,9 @@ More complicated transforms can be created by using combine as demonstrated in t
 
 ## Working Example
 This package was used to animate the Elm logo as part of the [elm-webpack-seed](https://github.com/benansell/elm-webpack-seed)
+
+
+## Not the droid you are looking for?
+The following elm packages have similar functionality:
+* [elm-graphics](http://package.elm-lang.org/packages/evancz/elm-graphics/latest)
+* [elm-linear-algebra](http://package.elm-lang.org/packages/elm-community/elm-linear-algebra/latest)

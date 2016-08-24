@@ -20,18 +20,6 @@ module Transformer2D
 using homogeneous coordinates which can be useful in
 [`2D computer graphics`](https://en.wikipedia.org/wiki/2D_computer_graphics)
 
-# Example
-To rotate a any shape (list of points) by an angle around the origin:
-
-    rotateShape : List Point -> Float -> List Point
-    rotateShape points angle =
-        let
-            transform =
-                rotate Clockwise angle
-                    |> apply
-        in
-            List.map transform points
-
 More complicated transforms can be created by using combine - as illustrated
 in the [elm-webpack-seed](https://github.com/benansell/elm-webpack-seed) project.
 
@@ -111,7 +99,7 @@ type ShearDirection
     | Vertical
 
 
-{-| Apply the transformation to the point.
+{-| Apply the transformation to a point.
 -}
 apply : Transformation -> Point -> Point
 apply t p =
@@ -120,7 +108,17 @@ apply t p =
     }
 
 
-{-| Combine two transformations
+{-| Combine ([compose](https://en.wikipedia.org/wiki/Transformation_matrix#Composing_and_inverting_transformations)) two transformations:
+
+    complexShapeMovement : ( Float, Float ) -> Float -> List Point -> List Point
+    complexShapeMovement offset angle points =
+        let
+            transform =
+                combine (translate offset) (rotate Clockwise angle)
+                    |> apply
+        in
+            List.map transform points
+
 -}
 combine : Transformation -> Transformation -> Transformation
 combine t1 t2 =
@@ -149,7 +147,17 @@ identity p =
 
 
 {-| Creates a transformation that will rotate each point around the origin
-by the specified direction and angle.
+by the specified direction and angle:
+
+    rotateShape : Float -> List Point -> List Point
+    rotateShape angle points =
+        let
+            transform =
+                rotate Clockwise angle
+                    |> apply
+        in
+            List.map transform points
+
 -}
 rotate : RotateDirection -> Float -> Transformation
 rotate direction theta =
@@ -172,7 +180,17 @@ rotate direction theta =
 
 
 {-| Creates a transformation that will scale each point x value by the width and
-y value by the height relative to the origin
+y value by the height relative to the origin:
+
+    scaleShape : Float -> Float -> List Point -> List Point
+    scaleShape width height points =
+        let
+            transform =
+                scale width height
+                    |> apply
+        in
+            List.map transform points
+
 -}
 scale : Float -> Float -> Transformation
 scale width height =
