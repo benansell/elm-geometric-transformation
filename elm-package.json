@@ -1,5 +1,5 @@
 {
-    "version": "1.0.1",
+    "version": "1.0.2",
     "summary": "Rotate, Scale, Translate and Shear shapes",
     "repository": "https://github.com/benansell/elm-geometric-transformation.git",
     "license": "BSD-3-Clause",
