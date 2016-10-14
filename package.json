@@ -20,9 +20,9 @@
   },
   "scripts": {
     "clean": "rimraf node_modules elm-stuff tests/elm-stuff",
-    "build": "elm-make",
+    "build": "elm-make --yes",
     "build-doc": "elm-make --docs=documentation.json",
-    "test-console": "lobo --framework=elm-test",
+    "test-console": "lobo --framework=elm-test --prompt=no",
     "test-html": "cd tests && elm-reactor",
     "test": "npm run test-console --silent"
   }
