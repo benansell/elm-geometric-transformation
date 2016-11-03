@@ -1,8 +1,9 @@
 module Transformer2DTests exposing (all)
 
 import Expect
-import Transformer2D as Transformer
 import Test exposing (Test, describe, test)
+import Transformer2D as Transformer
+import Tuple
 
 
 all : Test
@@ -47,12 +48,12 @@ fromPoint =
         [ test "uses x as first value" <|
             \() ->
                 Transformer.fromPoint { x = 123, y = 456 }
-                    |> fst
+                    |> Tuple.first
                     |> Expect.equal 123
         , test "uses y as second value" <|
             \() ->
                 Transformer.fromPoint { x = 123, y = 456 }
-                    |> snd
+                    |> Tuple.second
                     |> Expect.equal 456
         ]
 

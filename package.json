@@ -12,10 +12,9 @@
   },
   "license": "BSD-3-Clause",
   "dependencies": {
-    "lobo": "^0.0.3"
+    "lobo": "^0.0.6"
   },
   "devDependencies": {
-    "elm-test": "^0.17.3",
     "rimraf": "^2.5.4"
   },
   "scripts": {
@@ -23,7 +22,6 @@
     "build": "elm-make --yes",
     "build-doc": "elm-make --docs=documentation.json",
     "test-console": "lobo --framework=elm-test --prompt=no",
-    "test-html": "cd tests && elm-reactor",
     "test": "npm run test-console --silent"
   }
 }
