@@ -12,7 +12,7 @@
   },
   "license": "BSD-3-Clause",
   "dependencies": {
-    "lobo": "^0.0.6"
+    "lobo": "^0.0.7"
   },
   "devDependencies": {
     "rimraf": "^2.5.4"
