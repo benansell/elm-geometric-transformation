@@ -11,5 +11,8 @@ node_modules/
 # emacs temp files
 .\#*
 
+# tests
+unit-tests.xml
+
 # webstorm
 .idea
