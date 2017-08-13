@@ -12,7 +12,7 @@
   },
   "license": "BSD-3-Clause",
   "dependencies": {
-    "lobo": "^0.0.7"
+    "lobo": "^0.3.0"
   },
   "devDependencies": {
     "rimraf": "^2.5.4"
@@ -21,7 +21,8 @@
     "clean": "rimraf node_modules elm-stuff tests/elm-stuff",
     "build": "elm-make --yes",
     "build-doc": "elm-make --docs=documentation.json",
-    "test-console": "lobo --framework=elm-test --prompt=no",
-    "test": "npm run test-console --silent"
+    "test-console": "lobo --framework=elm-test --prompt=no --debug --verbose",
+    "test": "npm run test-console --silent",
+    "test-ci": "lobo --framework=elm-test --reporter=junit-reporter --reportFile=unit-tests.xml --prompt=no --debug --verbose"
   }
 }
