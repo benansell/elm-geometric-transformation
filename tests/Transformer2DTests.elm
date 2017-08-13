@@ -52,7 +52,7 @@ fromPoint =
                     |> Expect.equal 123
         , test "uses y as second value" <|
             \() ->
-                Transformer.fromPoint { x = 123, y = 456 }
+                Transformer.fromPoint { x = 123, y = 123 }
                     |> Tuple.second
                     |> Expect.equal 456
         ]
