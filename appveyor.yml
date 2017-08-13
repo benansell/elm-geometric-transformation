@@ -19,11 +19,11 @@ install:
 build: off
 
 test_script:
-  - npm test-ci
+  - npm run test-ci
 
 on_finish:
   - ps: |
         $wc = New-Object 'System.Net.WebClient'
         Get-Item 'unit-tests.xml'  |
         $wc.UploadFile("https://ci.appveyor.com/api/testresults/junit/$($env:APPVEYOR_JOB_ID)", (Resolve-Path $_))
-        
+
