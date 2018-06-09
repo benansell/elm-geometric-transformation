@@ -1,26 +1,9 @@
-module Transformer2DTests exposing (all)
+module Transformer2DTests exposing (..)
 
 import Expect
 import Test exposing (Test, describe, test)
 import Transformer2D as Transformer
 import Tuple
-
-
-all : Test
-all =
-    describe "GeometricTransformer2D"
-        [ apply
-        , combine
-        , fromPoint
-        , identity
-        , rotate
-        , scale
-        , scaleUniform
-        , shear
-        , toPoint
-        , translate
-        ]
-
 
 
 -- POINT

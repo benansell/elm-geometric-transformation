@@ -23,18 +23,25 @@ using homogeneous coordinates which can be useful in
 More complicated transforms can be created by using combine - as illustrated
 in the [elm-webpack-seed](https://github.com/benansell/elm-webpack-seed) project.
 
+
 # Working with Points
+
 @docs Point, toPoint, fromPoint
 
+
 # Creating Transformations
+
 @docs Transformation, identity, rotate, scale, scaleUniform, shear, translate
 
+
 # Applying and Combining Transformations
+
 @docs apply, combine
 
-# Misc
-@docs RotateDirection, ShearDirection
 
+# Misc
+
+@docs RotateDirection, ShearDirection
 
 -}
 
