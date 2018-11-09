@@ -1,8 +1,8 @@
 module Transformer2D
     exposing
         ( Point
-        , RotateDirection(AntiClockwise, Clockwise)
-        , ShearDirection(Horizontal, Vertical)
+        , RotateDirection(..)
+        , ShearDirection(..)
         , Transformation
         , apply
         , combine

@@ -286,3 +286,8 @@ roundPoint p =
         { x = roundWithAccuracy p.x
         , y = roundWithAccuracy p.y
         }
+
+
+flip : (a -> b -> c) -> b -> a -> c
+flip function argB argA =
+    function argA argB
