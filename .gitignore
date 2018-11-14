@@ -12,7 +12,8 @@ node_modules/
 .\#*
 
 # tests
+.lobo/
 unit-tests.xml
 
 # webstorm
-.idea
+.idea/
